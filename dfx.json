@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "ICCharity_backend": {
+      "main": "src/ICCharity_backend/main.mo",
+      "type": "motoko"
+    },
+    "ICCharity_frontend": {
+      "dependencies": [
+        "ICCharity_backend"
+      ],
+      "source": [
+        "src/ICCharity_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
